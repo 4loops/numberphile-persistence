@@ -8,3 +8,10 @@ This is sequence [A003001](https://oeis.org/A003001) in the On-Line Encyclopedia
 It is conjectured that there are no numbers of multiplicative persistence > 11. 
 
 The code uses a depth-first search technique (through recursion) looking for numbers which have a prime factorization composed entirely of 2s, 3s, and 7s.
+
+These early attempts suggest that this might not be an efficient way to search for these numbers.
+
+Potential improvements:
+- parallelization 
+- other base systems
+
