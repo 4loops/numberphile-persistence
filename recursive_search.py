@@ -1,3 +1,4 @@
+import sys
 
 def factors_of_237(n):
     factors = [0,0,0]
@@ -44,7 +45,11 @@ def rec_search(current_num,depth, max_n1=2):
                 if factors_of_237(cand):
                     print("FOUND", cand, depth)
                     rec_search(cand,depth+1)
-
-rec_search(336,4)
+if __name__ == "__main__":
+    if len(sys.argv) ==2:
+        start_point = int(sys.argv[1])
+        rec_search(start_point,4)
+    else:
+        print("USAGE: python recursive_search.py [STARTING NUMBER]")
 
 
